@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat App</title>
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+        <script defer src="client.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <!-- Login Screen -->
+        <div id="login-container">
+            <h2 class="headline">Please enter the Password to join the chat</h2>
+            <form id="login-form">
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit" class="btn">Submit</button>
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </div>
+        <!-- Chat Interface -->
+    <nav id="chat-nav" style="display: none;">
+        <img src="chat2.png" alt="chat icon" class="logo">
+        <h1>Welcome To <span>MULTIUSER</span>-Chat App</h1>
+    </nav>
+
+    <div class="container" style="display: none;"></div>
+
+    <div class="send" style="display: none;">
+            <form action="#" id="send-container">
+                <input type="text" name="messageInp" id="messageInp" placeholder="    Enter text..">
+                <button type="submit" class="btn">Send</button>
+
+            </form>
+        </div>
+    </body>
+</html>
+
